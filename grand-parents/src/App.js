@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Sidebar from './Components/Sidebar/sidebar';
 import Login from './Components/Login/login';
+import ActividadesF from './Components/Actividades/actividadesF';
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
     <Switch>
       <Route>
       
-      <Login></Login>
+       {/* <Login></Login>  */}
+         <ActividadesF></ActividadesF> 
 
+      </Route>
+      <Route>
       </Route>
     </Switch>
     

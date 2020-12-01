@@ -9,6 +9,9 @@ function Login (){
 
                 
                 </div>
+                <div className="col">
+
+                </div>
             </div>
         </div>
     );

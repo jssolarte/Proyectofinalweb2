@@ -1,0 +1,63 @@
+.o-container-inicio{
+    margin-left: 15rem;
+
+}
+
+.o-container-body-home {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  /*ESTILOS CONTAINER IZQUIERDO*/
+  .o-container-left {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    float: left;
+    border: 1rem;
+    border-color: #3665f5;
+  }
+  
+  .o-paragraph {
+    margin: 1rem;
+    color: grey;
+  }
+  .o-detail-left {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+  }
+
+.o-container-right {
+    width: 50%;
+    float: right;
+    text-align: center;
+  }
+
+  .o-img-right {
+    height: 20rem;
+}
+
+.o-btn-login{
+
+    border-radius: 0.9rem;
+    color: white;
+    background-color: #458FF6;
+    border: none;
+    outline: none;
+    height: 2.1rem;
+    width: 10rem;
+    cursor: pointer;
+    margin: 0.4rem;
+}
+
+.o-container-texto{
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: grey;
+}
+

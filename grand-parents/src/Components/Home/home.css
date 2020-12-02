@@ -9,6 +9,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  .o-container-titulo{
+    justify-content: center;
+
+  }
   /*ESTILOS CONTAINER IZQUIERDO*/
   .o-container-left {
     display: flex;

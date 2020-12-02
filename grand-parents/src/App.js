@@ -9,6 +9,7 @@ import {
 import Sidebar from './Components/Sidebar/sidebar';
 import Login from './Components/Login/login';
 import ActividadesF from './Components/Actividades/actividadesF';
+import Home from './Components/Home/home';
 
 function App() {
   return (
@@ -18,9 +19,9 @@ function App() {
 
     <Switch>
       <Route>
-      
+        <Home></Home>
        {/* <Login></Login>  */}
-         <ActividadesF></ActividadesF> 
+         {/* <ActividadesF></ActividadesF>  */}
 
       </Route>
       <Route>

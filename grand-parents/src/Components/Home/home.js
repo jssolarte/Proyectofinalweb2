@@ -1,9 +1,13 @@
 import React from 'react';
+import imghome from '../../Assets/icons/img_inicio.png';
 
 function Home(){
     return(
         <div>
-            <h1>holamundo</h1>
+            
+            <img src={imghome}/>
         </div>
     );
 }
+
+export default Home;

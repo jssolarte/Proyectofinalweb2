@@ -9,50 +9,38 @@ function Sidebar(){
             <i class="fas fa-arrow-left"></i>
         </div>
         <div class="sidebar-header">
-            <h3>Bootstrap Sidebar</h3>
+            <h3>GrandParent´s Enjoy</h3>
         </div>
         <ul class="list-unstyled components">
-            <p>Dummy Heading</p>
+            <p>Recreación para personas mayores</p>
             <li class="active">
                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a href="#">Home 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 3</a>
-                    </li>
-                </ul>
             </li>
             <li>
-                <a href="#">About</a>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                <a href="#">Perfil</a>
+            </li>
+            <li>
+                
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Actividades</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     <li>
-                        <a href="#">Page 1</a>
+                        <a href="#">Físicas</a>
                     </li>
                     <li>
-                        <a href="#">Page 2</a>
+                        <a href="#">Lúdicas</a>
                     </li>
-                    <li>
-                        <a href="#">Page 3</a>
-                    </li>
+                    
                 </ul>
             </li>
+            
             <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
+                <a href="#">Conócenos</a>
             </li>
         </ul>
     </nav>
 
    
-    <div id="content">
+    {/* <div id="content">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -63,7 +51,7 @@ function Sidebar(){
                 </button>
             </div>
         </nav>
-    </div>
+    </div> */}
     
     <div class="overlay"></div>
 </div>

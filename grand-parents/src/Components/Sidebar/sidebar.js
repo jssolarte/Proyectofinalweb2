@@ -14,40 +14,32 @@ import imgIconConocenos from '../../Assets/icons/iconodeprueba.png';
 
 
 function Sidebar(){
-    return(
-
-        
-        
+    return(     
         <div className="o-container-sidebar">
+            <div className="o-barra-horizontal"></div>
             <div class="wrapper">
-             <nav id="sidebar">
+             <nav id="sidebar"className="shadow-sm p-3 mb-5 bg-white rounded mt-3">
               <div id="dismiss">
             <i class="fas fa-arrow-left"></i>
         </div>
-
         <div className="o-div-profile">
             <div>
             <img src={imgProfile} />
-            <h4>Nombre usuario</h4>
-
-            </div>
-            
-        
-            
+            <h5 className="o-sidebar-header">Nombre</h5>
+            </div>           
         </div>
-        <div class="sidebar-header">
-            <h3>GrandParent´s Enjoy</h3>
+        <div class="o-sidebar-header ">
+            <h4>GrandParent´s Enjoy</h4>
         </div>
-        <ul class="list-unstyled components">
-            <p>Recreación para personas mayores</p>
+            <p className="o-sidebar-header border-bottom o-padding-ul ">Recreación para personas mayores</p>
+        <ul class="list-unstyled components o-ul-list">
             <li class="active"> <Link to="/home">
             <img src={imgIconInicio} />   <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a></Link>
             </li>
             <li>
               <Link to="/perfil"> <img src={imgIconPerfil} /> <a>Perfil</a></Link>
             </li>
-            <li>
-                
+            <li>    
             <img src={imgIconActividad} /><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Actividades</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                    <li className="pl-3"> 
@@ -57,18 +49,20 @@ function Sidebar(){
                     <img src={imgIconActividad} /><a>Lúdicas</a> </Link>
                     </li>  
                 </ul>
-            </li>
-            
-            <li><Link to="/nosotros">
+            </li>            
+            <li className="border-bottom o-padding-finish"><Link to="/nosotros">
             <img src={imgIconConocenos} /> <a>Conócenos</a></Link>
-            </li>
-           
+            </li>           
+                </ul>
+                <ul className="o-ul-soporte">
+                    <li>
+                    <img src={imgIconActividad} /><a>Soporte</a> </li>
                 </ul>
                  </nav>
-                <div class="overlay"></div>
+                {/* <div class="overlay"></div> */}
+               
             </div>
-        </div>
-     
+        </div>     
     );
 }
 export default Sidebar;

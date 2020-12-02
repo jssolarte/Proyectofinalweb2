@@ -1,6 +1,7 @@
 import React from 'react';
 import './login.css';
 import imgLogin from '../../Assets/img/login.png';
+import { Link } from 'react-router-dom';
 
 function Login (){
     return(
@@ -20,7 +21,7 @@ function Login (){
     <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
     <label class="form-check-label" for="exampleCheck1">Aceptar Terminos y Condiciones</label>
   </div>
-  <button type="submit" class="btn-lg btn-primary">Ingresar</button>
+ <a href="/home"><button type="submit" class="btn-lg btn-primary">Ingresar</button></a>
 </form>
                 
                 </div>

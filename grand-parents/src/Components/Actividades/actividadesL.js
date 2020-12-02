@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import Sidebar from '../Sidebar/sidebar';
 import './actividadesL.css';
 
 function ActividadesL(){
     return(
+        <>
+        <Sidebar></Sidebar>
         <div className="o-container-actividadesL">
             <div>
 
@@ -13,6 +16,7 @@ function ActividadesL(){
            </div>
             </div>
         </div>
+        </>
     );
 }
 export default ActividadesL;

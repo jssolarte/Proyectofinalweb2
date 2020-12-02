@@ -7,19 +7,21 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import Sidebar from '../Sidebar/sidebar';
 
 function Home(){
     return(
+        <>
+        <Sidebar></Sidebar>
         <div className="o-container-inicio">
             <div className="o-container-body-home">
                 <div className="o-container-left">
                     <div className="o-detail-left">
-                        <h1>Actividades <br/> lúdicas</h1>
+                        <h1>Bienvenidos, Grand Parents</h1>
                     <p className="o-paragraph">
                         Nuestra meta es ayudar <br/>  a las personas mayores,<br/>ofreciéndoles distintas <br/> actividades para  <br/> su tiempo en casa.
                     </p>
 
-                   <div><button className="o-btn-login">Iniciar Sesión</button> </div>
 
                     </div> 
                 </div>
@@ -34,7 +36,7 @@ function Home(){
                 
             </div>
         </div>
-        
+        </>
     );
 }
 

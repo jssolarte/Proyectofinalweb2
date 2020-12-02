@@ -3,11 +3,14 @@ import './sobreNosotros.css';
 import imgface from '../../Assets/icons/fb.png';
 import imgtwitter from '../../Assets/icons/twi.png';
 import imgig from '../../Assets/icons/ig.png';
+import Sidebar from '../Sidebar/sidebar';
 
 
 
 function SobreNosotros(){
     return(
+        <>
+        <Sidebar></Sidebar>
         <div className="o-container-inicio">
             <div className="o-header">
                 <h2 className="mt-2">GrandParents Enjoy</h2>
@@ -31,7 +34,7 @@ function SobreNosotros(){
 
             </div>
         </div>
-        
+        </>
     );
 }
 

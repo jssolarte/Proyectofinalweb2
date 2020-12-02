@@ -17,6 +17,7 @@ function Sidebar(){
     return(
 
         
+        
         <div className="o-container-sidebar">
             <div class="wrapper">
              <nav id="sidebar">
@@ -39,37 +40,35 @@ function Sidebar(){
         </div>
         <ul class="list-unstyled components">
             <p>Recreación para personas mayores</p>
-            <li class="active"> <Link to="/"/>
-            <img src={imgIconInicio} />   <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+            <li class="active"> <Link to="/home">
+            <img src={imgIconInicio} />   <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a></Link>
             </li>
             <li>
-              <Link to="/perfil"/> <img src={imgIconPerfil} /> <a href="#">Perfil</a>
+              <Link to="/perfil"> <img src={imgIconPerfil} /> <a>Perfil</a></Link>
             </li>
             <li>
                 
             <img src={imgIconActividad} /><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Actividades</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                    <li className="pl-3"> 
-                   <Link to="/actividades-fisicas"> <img src={imgIconActividad} /> <a>Físicas</a></Link>
+                   <Link to="/actividadesfisicas"> <img src={imgIconActividad}/> <a>Físicas</a></Link>
                     </li>
-                    
-                    <li className="pl-3"><Link  to="/actividades-ludicas"/>
-                    <img src={imgIconActividad} /><a href="#">Lúdicas</a>
-                    </li>
-                    
+                    <li className="pl-3"><Link  to="/actividadesludicas">
+                    <img src={imgIconActividad} /><a>Lúdicas</a> </Link>
+                    </li>  
                 </ul>
             </li>
             
-            <Link to="/nosotros">
-            <img src={imgIconConocenos} /> <a href="#">Conócenos</a>
-            </Link>
+            <li><Link to="/nosotros">
+            <img src={imgIconConocenos} /> <a>Conócenos</a></Link>
+            </li>
+           
                 </ul>
                  </nav>
-    
                 <div class="overlay"></div>
             </div>
         </div>
-        
+     
     );
 }
 export default Sidebar;

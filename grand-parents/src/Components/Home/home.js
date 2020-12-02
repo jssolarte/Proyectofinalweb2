@@ -1,7 +1,12 @@
 import React from 'react';
 import './home.css';
 import imghome from '../../Assets/img/img_inicio.png';
-import { Link } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 function Home(){
     return(

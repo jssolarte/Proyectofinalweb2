@@ -15,37 +15,55 @@ import ActividadesL from './Components/Actividades/actividadesL';
 
 function App() {
   return (
-  
-  <Router>
-     <Route path="/">
-        <Login></Login> 
-      </Route>
-    {/* <Sidebar></Sidebar> */}
 
+    <Router>
     <Switch>
-    <Route>
+       <Route path="/login">
+        <Login></Login>
+       </Route> 
 
-    {/* <Sidebar></Sidebar> */}
-    </Route>
-    <Route path="/login">
-        <Login></Login> 
+       <Route>
+       <Sidebar></Sidebar> 
+       <Home></Home>
+       </Route>
+      
+     
+      <Route path="/home"> 
       </Route>
+    </Switch>
 
-      <Route>
-        <Home></Home>
-      </Route>
+    </Router>
 
-      <Route path="/activades-fisicas">
-        <ActividadesF></ActividadesF> 
-      </Route>
-      <Route path="/actividades-ludicas">
-        <ActividadesL></ActividadesL>
-      </Route>
+
+
+
+
+  // <Router>
+    
+  //   <Login></Login>  
+   
+  //   <Switch>
+  //   <Route>
+
+  //  <Sidebar></Sidebar> 
+  //   </Route>
+   
+
+  //     <Route>
+  //       <Home></Home>
+  //     </Route>
+
+  //     <Route path="/activades-fisicas">
+  //       <ActividadesF></ActividadesF> 
+  //     </Route>
+  //     <Route path="/actividades-ludicas">
+  //       <ActividadesL></ActividadesL>
+  //     </Route>
 
      
-    </Switch>
+  //   </Switch>
     
-  </Router>
+  // </Router>
   
   );
 }

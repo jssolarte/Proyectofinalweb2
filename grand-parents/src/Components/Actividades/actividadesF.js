@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import Sidebar from '../Sidebar/sidebar';
 import './actividadesF.css';
 
 function ActividadesF(){
     return(
-        <div className="o-container-actividades">
+        <>    
+        <Sidebar></Sidebar>
+        <div className="o-container-actividadesF">
             <div>
 
            <div className="d-flex mt-4"><h3>Comenzar Actividad</h3></div> 
@@ -13,6 +16,7 @@ function ActividadesF(){
            </div>
             </div>
         </div>
+        </>
     );
 }
 export default ActividadesF;

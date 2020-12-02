@@ -1,0 +1,25 @@
+.o-container-inicio{
+
+    text-align-last: center;
+}
+.o-header{
+
+
+    background-color:#3665f5;
+    color: white;
+    height: 6rem;
+}
+
+.o-container-socialmedia{
+
+    display: flex;
+   justify-content: center;
+  
+
+}
+.o-img{
+
+height: 1rem;
+margin-right: 0.5rem;
+
+}

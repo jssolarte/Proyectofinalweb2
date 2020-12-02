@@ -11,6 +11,7 @@ import Login from './Components/Login/login';
 import ActividadesF from './Components/Actividades/actividadesF';
 import Home from './Components/Home/home';
 import ActividadesL from './Components/Actividades/actividadesL';
+import SobreNosotros from './Components/SobreNosotros/sobreNosotros';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
     <Router>
     <Switch>
+      <SobreNosotros></SobreNosotros>
        <Route path="/login">
         <Login></Login>
        </Route> 

@@ -1,3 +1,39 @@
-.asadasd{
+.o-container-inicio{
+
+    margin-left: 20rem;
+}
+
+.o-container-up{
+
+    display: flex;
+    justify-content: center;
     
+}
+.o-text{
+
+    margin-left: 1rem;
+    
+
+
+}
+.o-text-information{
+    padding: 0.5rem;
+    height: 7rem;
+
+}
+
+.o-container-down{
+
+    display: flex;
+    justify-content: center;
+}
+
+.o-img{
+
+    height: 10rem;
+}
+.o-letra{
+
+    font-size: 0.5rem;
+    font-weight: bold;
 }

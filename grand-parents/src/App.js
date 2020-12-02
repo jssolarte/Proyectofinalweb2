@@ -12,6 +12,7 @@ import ActividadesF from './Components/Actividades/actividadesF';
 import Home from './Components/Home/home';
 import ActividadesL from './Components/Actividades/actividadesL';
 import SobreNosotros from './Components/SobreNosotros/sobreNosotros';
+import Perfil from './Components/Perfil/perfil';
 
 
 function App() {
@@ -19,8 +20,10 @@ function App() {
 
     <Router>
     <Switch>
+    <Perfil></Perfil>
+
        <Route exact path="/">
-        <Login></Login>
+        {/* <Login></Login> */}
        </Route> 
 
        <Route>

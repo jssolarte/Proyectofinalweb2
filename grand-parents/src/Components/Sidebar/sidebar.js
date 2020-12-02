@@ -28,7 +28,7 @@ function Sidebar(){
         <div className="o-div-profile">
             <div>
             <img src={imgProfile} />
-            <h4>Nombre</h4>
+            <h4>Nombre usuario</h4>
 
             </div>
             

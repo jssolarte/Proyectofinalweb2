@@ -20,7 +20,7 @@ function App() {
 
     <Router>
     <Switch>
-       <Route component={Login} path="/login" exact/>
+       <Route component={Login} path="/" exact/>
       
        {/* <Route component={Sidebar} exact/> */}
        <Route component={Home} path="/home"/>

@@ -9,6 +9,8 @@ import {
 import Sidebar from './Components/Sidebar/sidebar';
 import Login from './Components/Login/login';
 import ActividadesF from './Components/Actividades/actividadesF';
+import ActividadesL from './Components/Actividades/actividadesL';
+
 
 function App() {
   return (
@@ -17,13 +19,14 @@ function App() {
     <Sidebar></Sidebar>
 
     <Switch>
-      <Route>
-      
-       {/* <Login></Login>  */}
-         <ActividadesF></ActividadesF> 
-
+      <Route path="/login">
+        <Login></Login> 
       </Route>
-      <Route>
+      <Route path="/activades-fisicas">
+        <ActividadesF></ActividadesF> 
+      </Route>
+      <Route path="/actividades-ludicas">
+        <ActividadesL></ActividadesL>
       </Route>
     </Switch>
     

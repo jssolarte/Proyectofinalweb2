@@ -19,8 +19,7 @@ function App() {
 
     <Router>
     <Switch>
-      <SobreNosotros></SobreNosotros>
-       <Route path="/login">
+       <Route exact path="/">
         <Login></Login>
        </Route> 
 
@@ -28,11 +27,24 @@ function App() {
        <Sidebar></Sidebar> 
        <Home></Home>
        </Route>
-      
-     
-      <Route path="/home"> 
+
+       <Route path="/activiades-fisicas">
+         <ActividadesF></ActividadesF>
+       </Route>
+       <Route>
+         <ActividadesL></ActividadesL>
+       </Route>
+
+      <Route path="/nosotros">
+        <SobreNosotros></SobreNosotros>
       </Route>
+
+      <Route path="/home"> 
+        <Home></Home>
+      </Route>
+  
     </Switch>
+    
 
     </Router>
 

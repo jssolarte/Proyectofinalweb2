@@ -50,7 +50,7 @@ function Sidebar(){
             <img src={imgIconActividad} /><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Actividades</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                    <li className="pl-3"> 
-                    <img src={imgIconActividad} /> <Link to="/actividades-fisicas"><a>Físicas</a></Link>
+                   <Link to="/actividades-fisicas"> <img src={imgIconActividad} /> <a>Físicas</a></Link>
                     </li>
                     
                     <li className="pl-3"><Link  to="/actividades-ludicas"/>
@@ -60,7 +60,7 @@ function Sidebar(){
                 </ul>
             </li>
             
-            <Link>
+            <Link to="/nosotros">
             <img src={imgIconConocenos} /> <a href="#">Conócenos</a>
             </Link>
                 </ul>

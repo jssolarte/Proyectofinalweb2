@@ -3,11 +3,14 @@ import './perfil.css';
 import imgProfile from '../../Assets/icons/profilepic.png';
 import imgGraph1 from '../../Assets/icons/graph1.png';
 import imgGraph2 from '../../Assets/icons/graph2.png';
+import Sidebar from '../Sidebar/sidebar';
 
 
 
 function Perfil() {
     return (
+        <>
+        <Sidebar></Sidebar>
         <div className="o-container-inicio">
             <div className="o-container-up mt-3">
                 <div><img className="o-picture" src={imgProfile} /></div>
@@ -33,7 +36,7 @@ function Perfil() {
                                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                  </div>
                                     <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+                        </form>
 
                             </div>
                         </div>
@@ -49,7 +52,7 @@ function Perfil() {
                             </div>
                         </div>
         </div>
-
+        </> 
     );
 }
 

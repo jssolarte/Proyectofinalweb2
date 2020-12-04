@@ -14,11 +14,12 @@ import imgIconConocenos from '../../Assets/icons/iconodeprueba.png';
 
 
 function Sidebar(){
-    return(     
+    return( 
+           
         <div className="o-container-sidebar">
-            <div className="o-barra-horizontal"></div>
+        <div className="o-barra-horizontal"></div>
             <div class="wrapper">
-             <nav id="sidebar"className="shadow-sm p-3 mb-5 bg-white rounded mt-3">
+             <nav id="sidebar"className="shadow-sm p-3 mb-5 bg-white rounded mt-3 o-nav-sidebar">
               <div id="dismiss">
             <i class="fas fa-arrow-left"></i>
         </div>
@@ -42,7 +43,7 @@ function Sidebar(){
             <li>    
             <img src={imgIconActividad} /><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Actividades</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
-                   <li className="pl-3"> 
+                   <li className="pl-3 pt-2"> 
                    <Link to="/actividadesfisicas"> <img src={imgIconActividad}/> <a>Físicas</a></Link>
                     </li>
                     <li className="pl-3"><Link  to="/actividadesludicas">
@@ -62,7 +63,9 @@ function Sidebar(){
                 {/* <div class="overlay"></div> */}
                
             </div>
+
         </div>     
+           
     );
 }
 export default Sidebar;

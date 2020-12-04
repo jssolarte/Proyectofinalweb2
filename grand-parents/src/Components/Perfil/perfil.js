@@ -11,35 +11,34 @@ function Perfil() {
     return (
         <>
         <Sidebar></Sidebar>
-        <div className="o-container-inicio">
-            <div className="o-container-up mt-3">
-                <div><img className="o-picture" src={imgProfile} /></div>
+        <div className="o-container-inicio ">
+        {/* <h3 className="o-title-profile-retro">Perfil</h3> */}
+
+            <div className="o-container-up mt-5">
+                {/* <div><img className="o-picture" src={imgProfile} /></div> */}
                 <div className="o-text">
 
-                    <p className="o-text-information">¡Hola! <br></br>
+                    <p className="o-text-information">¡Hola! Nombre <br></br>
 
                     Por favor ingresa tú información aquí<br></br>
                     Para que puedas compartirla con los demas.</p>
 
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                 </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <form className=" o-form-profile"> 
+                        <div class="form-group mx-sm-3">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu edad"/>
+                        </div>
+                        <div class="form-group mx-sm-3">
+                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tu Peso"/>
+                        </div>
+                        <div class="form-group mx-sm-3">
+                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tu Estatura"/>
+                        </div>
                         </form>
+                            <button type="submit" class="btn btn-primary o-button-profile">Enviar</button>
 
                             </div>
                         </div>
+                        <h3 className="o-title-profile-retro">Retroalimentacion</h3>
                         <div className="o-container-down mt-5">
                             <div><img className="o-img" src={imgGraph1} />
                                 <p className="o-letra">Videos vistos: 6</p>

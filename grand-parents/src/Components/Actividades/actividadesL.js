@@ -10,9 +10,12 @@ function ActividadesL(){
         <div className="o-container-actividadesL">
             <div>
 
-           <div className=""><h3>Comenzar Actividad Ludicas</h3></div> 
+           <div className="d-flex mt-4"><h3>Comenzar Actividad Ludicas</h3></div> 
            <div className="d-flex justify-content-center mt-5">
             < ReactPlayer url = ' https://www.youtube.com/watch?v=ysz5S6PUM-U ' />  
+           </div>
+           <div>
+               <h1>Contenedor para estadisticas</h1>
            </div>
             </div>
         </div>

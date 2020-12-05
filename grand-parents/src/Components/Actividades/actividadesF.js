@@ -21,16 +21,18 @@ function ActividadesF(){
            </div>
             </div>
         <div>
+
        {/* <POST   
         http= "localhost: 3000"
         client_id= "xtyMAnxB80"
         client_secret= "9b461fa198b714b75a51e6ff33086117"
         redirect_uri= "http: // localhost: 3000"
         onSuccess={respuestaPOST}
-        >
-            
-     
-       </POST>  */}
+        > </POST>  */}
+        </div>
+
+        <div>
+            <h1>contenedor para estadisticas</h1>
         </div>
             
         </div>

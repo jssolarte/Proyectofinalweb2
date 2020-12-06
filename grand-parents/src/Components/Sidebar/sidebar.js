@@ -6,7 +6,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import imgProfile from '../../Assets/img/Oval.png';
+import imgProfile from '../../Assets/img/profilee.png';
 import imgIconInicio from '../../Assets/icons/homeblue.png';
 import imgIconPerfil from '../../Assets/icons/iconprofile.png';
 import imgIconActividad from '../../Assets/icons/actividadN.png';
@@ -21,6 +21,7 @@ function Sidebar(){
         <div className="o-barra-horizontal">
 
         <img className="o-logo-login" src={imgLogo} />
+        <a className="o-logout" href="https://www.w3schools.com">Cerrar sesión</a>
 
 
         </div>
@@ -31,7 +32,7 @@ function Sidebar(){
         </div>
         <div className="o-div-profile">
             <div>
-            <img src={imgProfile} />
+            <img className="o-img-profile" src={imgProfile} />
             <h5 className="o-sidebar-header">Juan José</h5>
             </div>           
         </div>

@@ -1,10 +1,12 @@
 .o-container-inicio{
-
-    text-align-last: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7rem;
 }
+
 .o-header{
-
-
     background-color:#3665f5;
     color: white;
     height: 6rem;

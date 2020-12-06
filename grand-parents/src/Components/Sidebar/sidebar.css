@@ -7,7 +7,7 @@
 }
 .o-barra-horizontal{
     
-    background-color: #8ba3f2;
+    background-color: #002361;
     height: 3rem;
         display: flex;
     align-items: center;
@@ -98,7 +98,7 @@ li,a{
     position: absolute;
 }
 .o-footer-sidebar{
-    background-color: #3F51B5;
+    background-color: #002361;
     
 }
 .o-icon-sidebar{

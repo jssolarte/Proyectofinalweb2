@@ -8,9 +8,18 @@ import './actividadesF.css';
 //     console.log(respuesta);
 // }
 
+const traerinfo=()=>{
+    fetch('url')
+    .then (response=>response.json)
+    .then (data=> console.log(data))
+
+
+
+}
 function ActividadesF(){
     return(
         <>    
+       
         <Sidebar></Sidebar>
         <div className="o-container-actividadesF">
             <div>
@@ -33,6 +42,10 @@ function ActividadesF(){
 
         <div>
             <h1>contenedor para estadisticas</h1>
+           <div>
+               
+            <iframe className="o-juego" src = " https://www.chess.com/daily_puzzle"> </iframe>
+           </div> 
         </div>
             
         </div>

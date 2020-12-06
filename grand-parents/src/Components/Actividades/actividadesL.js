@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import Sidebar from '../Sidebar/sidebar';
+import Chessground from 'react-chessground';
 import './actividadesL.css';
 
 function ActividadesL(){
@@ -16,6 +17,11 @@ function ActividadesL(){
            </div>
            <div>
                <h1>Contenedor para estadisticas</h1>
+            <div>
+
+           
+            <iframe className="o-juego" src="https://fritz.chessbase.com" ></iframe> 
+            </div>
            </div>
             </div>
         </div>

@@ -11,6 +11,7 @@
 }
 .o-text{
     margin-left: 1rem;
+    text-align-last: center;
 }
 .o-text-information{
     padding: 0.5rem;
@@ -38,7 +39,7 @@
 .o-title-profile-retro{
     display: flex;
     text-align: start;
-    margin-left: 7rem;
+   
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
@@ -48,4 +49,8 @@
 .o-input-imc{
     border: none;
     width: 100%;
+    text-align-last: center;
+}
+.o-text-retro {
+    text-align: center;
 }

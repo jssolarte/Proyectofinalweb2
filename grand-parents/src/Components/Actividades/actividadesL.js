@@ -12,14 +12,11 @@ function ActividadesL(){
         <div className="o-container-actividadesL">
             <div>
 
-           <div className="d-flex mt-4"><h3>Comenzar Actividad Ludicas</h3></div> 
-           <div className="d-flex justify-content-center mt-5">
-            < ReactPlayer url ='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls/>  
-           </div>
+           <div className="d-flex mt-4 o-text-game"><h3>Actividad lúdica: Ajedrez</h3></div> 
+           
            <div>
-               <h1>Contenedor para estadisticas</h1>
-            <div>
-
+               
+            <div className="o-container-game">
            {/* <Demo></Demo> */}
             <iframe className="o-juego" src="https://fritz.chessbase.com" ></iframe> 
             </div>

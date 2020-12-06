@@ -11,21 +11,21 @@ function calcularIMC(){
     let estaturametros = estatura/100;
     let peso =parseInt(document.getElementById('peso').value);
     let imcf = document.getElementById("imcf")
-
     let imc= Math.round(peso/estaturametros);
     let clasificacion;
-  
+    
     if (imc < 18.5) {
-      clasificacion = 'estás muy flaco hpta';
+        clasificacion = 'estás muy flaco hpta';
     } else if (imc < 25) {
-      clasificacion = 'estás bien hpta';
+        clasificacion = 'estás bien hpta';
     } else {
-      clasificacion = 'estas muy gordo hpta';
+        clasificacion = 'estas muy gordo hpta';
     }
+    document.getElementById("respuesta").value='Hola, tu IMC ES ' +imc+'y tu'+clasificacion;
     /* Consejo:
     
     */
-   let respuesta = 'Hola, tu IMC es ' + imc + ' y tu ' + clasificacion;
+    // let respuesta = 'Hola, tu IMC es ' + imc + ' y tu ' + clasificacion;
 //    respuesta.innerHtml=respuestaIMC;
     // alert(respuesta);
   
@@ -69,7 +69,8 @@ function Perfil() {
 
                             <div>
                                 <h1>Tu indice de masa corporal</h1>
-                                
+                                <input className="o-input-imc" type="text" id="respuesta"></input>
+
                             </div>
                         </div>
                         <h3 className="o-title-profile-retro">Retroalimentacion</h3>

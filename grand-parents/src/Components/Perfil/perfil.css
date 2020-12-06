@@ -45,3 +45,7 @@
 .o-button-profile{
     width: 10rem;
 }
+.o-input-imc{
+    border: none;
+    width: 100%;
+}

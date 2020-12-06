@@ -5,7 +5,31 @@ import imgGraph1 from '../../Assets/icons/graph1.png';
 import imgGraph2 from '../../Assets/icons/graph2.png';
 import Sidebar from '../Sidebar/sidebar';
 
-
+function calcularIMC(){
+    let edad =document.getElementById('edad').value;
+    let estatura= parseInt(document.getElementById('estatura').value);
+    let estaturametros = estatura/100;
+    let peso =parseInt(document.getElementById('peso').value);
+    let imcf = document.getElementById("imcf")
+    let imc= Math.round(peso/estaturametros);
+    let clasificacion;
+    
+    if (imc < 18.5) {
+        clasificacion = 'estás muy flaco hpta';
+    } else if (imc < 25) {
+        clasificacion = 'estás bien hpta';
+    } else {
+        clasificacion = 'estas muy gordo hpta';
+    }
+    document.getElementById("respuesta").value='Hola, tu IMC ES ' +imc+'y tu'+clasificacion;
+    /* Consejo:
+    
+    */
+    // let respuesta = 'Hola, tu IMC es ' + imc + ' y tu ' + clasificacion;
+//    respuesta.innerHtml=respuestaIMC;
+    // alert(respuesta);
+  
+}
 
 function Perfil() {
     return (
@@ -25,16 +49,27 @@ function Perfil() {
 
                     <form className=" o-form-profile"> 
                         <div class="form-group mx-sm-3">
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu edad"/>
+                            <label>Ingresa tu edad</label>
+                            <input type="text" class="form-control" id="edad"  placeholder="Ingresa tu edad"/>
                         </div>
                         <div class="form-group mx-sm-3">
-                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tu Peso"/>
+                        <label>Ingresa tu Peso</label>
+
+                          <input type="text" class="form-control" id="peso" placeholder="Ejemplo 55 kg" required="required"/>
                         </div>
                         <div class="form-group mx-sm-3">
-                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ingresa tu Estatura"/>
+                        <label>Ingresa tu Estatura</label>
+
+                          <input type="text" class="form-control" id="estatura" placeholder="Ejemplo 150 mts"  required="required"/>
                         </div>
                         </form>
-                            <button type="submit" class="btn btn-primary o-button-profile">Enviar</button>
+                            <button type="submit" onClick={calcularIMC} class="btn btn-primary o-button-profile">Enviar</button>
+
+                            </div>
+
+                            <div>
+                                <h1>Tu indice de masa corporal</h1>
+                                <input className="o-input-imc" type="text" id="respuesta"></input>
 
                             </div>
                         </div>

@@ -1,12 +1,18 @@
 .o-container-sidebar{
     /* border: 1px solid black; */
     height: 3rem;
-    background-color: #3F51B5;
+    
      /* position: fixed;  */
     
 }
 .o-barra-horizontal{
- /* position: fixed;  */
+    
+    background-color: #8ba3f2;
+    height: 3rem;
+        display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
 }
 .wrapper {
     display: block;
@@ -96,4 +102,9 @@ li,a{
 }
 .o-icon-sidebar{
     width: 2rem;
+}
+.o-logo-login{
+
+    height: 2rem;
+    padding-right: 2rem;
 }

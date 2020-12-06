@@ -12,12 +12,18 @@ import imgIconPerfil from '../../Assets/icons/iconprofile.png';
 import imgIconActividad from '../../Assets/icons/actividadN.png';
 import imgIconConocenos from '../../Assets/icons/iconnosotros.png';
 import imgSoporte from '../../Assets/icons/soporte.png';
+import imgLogo from '../../Assets/img/logo2.png';
 
 function Sidebar(){
     return( 
            
         <div className="o-container-sidebar">
-        <div className="o-barra-horizontal"></div>
+        <div className="o-barra-horizontal">
+
+        <img className="o-logo-login" src={imgLogo} />
+
+
+        </div>
             <div class="wrapper">
              <nav id="sidebar"className="shadow-sm p-3 mb-5 bg-white rounded mt-3 o-nav-sidebar">
               <div id="dismiss">
@@ -26,7 +32,7 @@ function Sidebar(){
         <div className="o-div-profile">
             <div>
             <img src={imgProfile} />
-            <h5 className="o-sidebar-header">Nombre</h5>
+            <h5 className="o-sidebar-header">Juan José</h5>
             </div>           
         </div>
         <div class="o-sidebar-header ">

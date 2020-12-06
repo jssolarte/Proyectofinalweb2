@@ -1,7 +1,7 @@
 import React from 'react';
 import './login.css';
 import imgLogin from '../../Assets/img/login.png';
-import logoLogin from '../../Assets/img/logoG.png';
+import logoLogin from '../../Assets/img/logoGrand.png';
 import GoogleLogin from 'react-google-login';
 import {
   BrowserRouter as Router,
@@ -24,9 +24,9 @@ function Login (){
             <div className=" row p-0 m-0">
                 <div className="col o-container-left">
                  <div>
-                  <img src={logoLogin} />
+                  <img className="o-img-login-g" src={logoLogin} />
                  </div>
-                   <h1 className="mt-4">Inicar Sesión</h1> <br/>
+                   <h1 className="mt-4">Iniciar Sesión</h1> <br/>
                 <form>
   <div class="form-group">
     

@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import Sidebar from '../Sidebar/sidebar';
+import Chessground from 'react-chessground';
+
 // import POST from 'react'
 import './actividadesF.css';
+import Demo from './chess';
 
 // const respuestaPOST=(respuesta)=>{
 //     console.log(respuesta);
@@ -44,7 +47,9 @@ function ActividadesF(){
             <h1>contenedor para estadisticas</h1>
            <div>
                
-            <iframe className="o-juego" src = " https://www.chess.com/daily_puzzle"> </iframe>
+            {/* <iframe className="o-juego" src = " https://www.chess.com/daily_puzzle"> </iframe> */}
+
+            {/* <Demo></Demo> */}
            </div> 
         </div>
             

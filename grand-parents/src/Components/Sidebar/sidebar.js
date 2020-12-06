@@ -21,7 +21,10 @@ function Sidebar(){
         <div className="o-barra-horizontal">
 
         <img className="o-logo-login" src={imgLogo} />
-        <a className="o-logout" href="https://www.w3schools.com">Cerrar sesión</a>
+        <li>
+
+       <Link to="/"> <a className="o-logout">Cerrar sesión</a></Link>
+        </li>
 
 
         </div>

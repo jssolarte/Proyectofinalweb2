@@ -13,7 +13,7 @@ function Home(){
     return(
         <>
         <Sidebar></Sidebar>
-        <div className="o-container-inicio">
+        <div className="o-container-inicio mt-0">
             <div className="o-container-body-home">
                 <div className="o-container-left">
                     <div className="o-detail-left">

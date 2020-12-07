@@ -30,7 +30,7 @@ function Sidebar(){
 
         </div>
             <div class="wrapper">
-             <nav id="sidebar"className="shadow-sm p-3 mb-5 bg-white rounded mt-3 o-nav-sidebar">
+             <nav id="sidebar"className="shadow-lg p-3 mb-5 bg-white rounded mt-3 o-nav-sidebar">
               <div id="dismiss">
             <i class="fas fa-arrow-left"></i>
         </div>

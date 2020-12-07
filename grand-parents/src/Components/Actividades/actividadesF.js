@@ -36,7 +36,7 @@ class ActividadesF extends React.Component {
             <div className='ui container o-container-youtube' style={{marginTop: '1em'}}>
                 <SearchBar handleFormSubmit={this.handleSubmit}/>
                 <div className='ui grid'>
-                    <div className="ui row">
+                    <div className="ui">
                         <div className="eleven wide column">
                             <VideoDetail video={this.state.selectedVideo}/>
                         </div>

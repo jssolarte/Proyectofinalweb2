@@ -1,22 +1,55 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
+import SearchBar from './Searchbar';
+import youtube from './youtube';
+import VideoList from './VideoList';
+import VideoDetail from './VideoDetail';
+import axios from 'react-axios'
 import Sidebar from '../Sidebar/sidebar';
-import './actividadesF.css';
 
-function ActividadesF(){
-    return(
-        <>    
-        <Sidebar></Sidebar>
-        <div className="o-container-actividadesF">
-            <div>
 
-           <div className="d-flex mt-4"><h3>Comenzar Actividad Fisicas</h3></div> 
-           <div className="d-flex justify-content-center mt-5">
-            < ReactPlayer url = ' https://www.youtube.com/watch?v=ysz5S6PUM-U ' />  
-           </div>
+class ActividadesF extends React.Component {
+  
+    state = {
+        videos: [],
+        selectedVideo: null
+    }
+    handleSubmit = async (termFromSearchBar) => {
+        const response = await youtube.get('/search', {
+            params: {
+                q: termFromSearchBar
+            }
+        })
+
+        this.setState({
+            videos: response.data.items
+        })
+        console.log("this is resp",response);
+    };
+    handleVideoSelect = (video) => {
+        this.setState({selectedVideo: video})
+    }
+
+    render() {
+        return (
+            <>
+            <Sidebar></Sidebar>
+            <div className='ui container o-container-youtube' style={{marginTop: '1em'}}>
+                <SearchBar handleFormSubmit={this.handleSubmit}/>
+                <div className='ui grid'>
+                    <div className="ui">
+                        <div className="eleven wide column">
+                            <VideoDetail video={this.state.selectedVideo}/>
+                        </div>
+                        <div className="five wide column">
+                            <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos}/>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        </>
-    );
+            </>
+        )
+    }
+    
 }
+
 export default ActividadesF;

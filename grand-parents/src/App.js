@@ -13,6 +13,7 @@ import ActividadesL from './Components/Actividades/actividadesL';
 import ActividadesF from './Components/Actividades/actividadesF';
 import SobreNosotros from './Components/SobreNosotros/sobreNosotros';
 import Perfil from './Components/Perfil/perfil';
+import GoogleLogin from 'react-google-login';
 
 
 function App() {
@@ -21,8 +22,6 @@ function App() {
     <Router>
     <Switch>
        <Route component={Login} path="/" exact/>
-      
-       {/* <Route component={Sidebar} exact/> */}
        <Route component={Home} path="/home"/>
        <Route component={Perfil} path="/perfil"/>
        <Route component={ActividadesF} path="/actividadesfisicas"/>      

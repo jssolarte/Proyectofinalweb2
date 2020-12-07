@@ -2,3 +2,15 @@
 .o-container-actividadesL{
     margin-left: 20rem;
 }
+.o-juego{
+    width:760px;
+    height:480px;
+}
+.o-container-game{
+
+    text-align-last: center;
+}
+.o-text-game{
+    justify-content: center;
+    margin-bottom: 2rem;
+}

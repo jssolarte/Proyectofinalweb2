@@ -14,7 +14,7 @@ function SobreNosotros(){
         <Sidebar></Sidebar>
         <div className="o-container-inicio">
             <div className="o-header">
-                <h2 className="mt-2 o-text-up">GrandParents Enjoy</h2>
+                <h2 className="o-text-tittle">GrandParents Enjoy</h2>
                 <h6 className="o-text-up">¡Actividades para los mayores de la casa!</h6>
                 <div><img className="o-img-picture img-fluid" src={imgAbuelos}/></div>
 

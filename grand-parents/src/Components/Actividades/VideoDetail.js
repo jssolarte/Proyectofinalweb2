@@ -1,12 +1,19 @@
 import React from "react";
+import './VideoDetail.css';
 
 const VideoDetail = ({ video }) => {
   if (!video) {
     return <div>
-       <h1>Haga su consulta</h1>
-       <br></br>
+          <br/><h1 className="o-titulo-consulta">Haga su consulta</h1>
+       <br/>
        <p style={{fontSize:'25px'}}>
-       Use este buscador para mirar actividades fisicas que otras personas han hecho....        
+       Recomendamos las siguientes actividades que le ayudarán a estar en mejor forma:<br/>
+       - Estiramientos<br/>
+       - Zumba básico <br/> 
+       - Rutina ejercicios quema grasas<br/>
+       - rutina ejercicios para tonificar cuerpo<br/>
+       - Estiramientos para finalizar entreno<br/>
+       <br/><br/>Después de esta rútina podrá tener un entrenamiento completo.<br/>   
 
        </p>
     </div>;
@@ -16,6 +23,7 @@ const VideoDetail = ({ video }) => {
   console.log(typeof video);
   return (
     <div>
+      
       <div className="ui embed ">
         <iframe className="o-container-video-youtube" src={videoSrc} allowFullScreen title="Video player" />
       </div>

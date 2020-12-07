@@ -8,6 +8,7 @@ import Sidebar from '../Sidebar/sidebar';
 
 
 class ActividadesF extends React.Component {
+
   
     state = {
         videos: [],
@@ -34,17 +35,21 @@ class ActividadesF extends React.Component {
             <>
             <Sidebar></Sidebar>
             <div className='ui container o-container-youtube' style={{marginTop: '1em'}}>
-                <SearchBar handleFormSubmit={this.handleSubmit}/>
+               
                 <div className='ui grid'>
+                    
                     <div className="ui">
                         <div className="eleven wide column">
                             <VideoDetail video={this.state.selectedVideo}/>
+                            <SearchBar handleFormSubmit={this.handleSubmit}/>
                         </div>
                         <div className="five wide column">
                             <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos}/>
                         </div>
                     </div>
+                    
                 </div>
+
             </div>
             </>
         )

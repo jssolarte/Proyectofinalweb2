@@ -42,7 +42,7 @@ function Perfil() {
                 {/* <div><img className="o-picture" src={imgProfile} /></div> */}
                 <div className="o-text">
 
-                    <h2>Hola! Juan José</h2>
+                    <h2 className="o-tittle">Hola! Juan José</h2>
 
                     <p>Por favor ingresa tú información aquí<br></br>
                     Para que puedas compartirla con los demas.</p>
@@ -68,12 +68,12 @@ function Perfil() {
                             </div>
 
                             <div className="mt-5">
-                                <h1 className="o-text-retro">Tu indice de masa corporal</h1>
+                                <h1 className="o-text-retro">Tu índice de masa corporal</h1>
                                 <input className="o-input-imc" type="text" id="respuesta"></input>
 
                             </div>
                         </div>
-                        <h3 className="o-title-profile-retro">Retroalimentacion</h3>
+                        <h3 className="o-title-profile-retro">Retroalimentación</h3>
                         <div className="o-container-down mt-5">
                             <div><img className="o-img" src={imgGraph1} />
                                 <p className="o-letra">Videos vistos: 6</p>

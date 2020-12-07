@@ -13,6 +13,11 @@
     margin-left: 1rem;
     text-align-last: center;
 }
+
+.o-tittle{
+    color: #3665f5;
+    text-align: center;
+}
 .o-text-information{
     padding: 0.5rem;
     height: 7rem;
@@ -39,7 +44,7 @@
 .o-title-profile-retro{
     display: flex;
     text-align: start;
-   
+    color: #3665f5;
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
@@ -53,4 +58,5 @@
 }
 .o-text-retro {
     text-align: center;
+    color: #3665f5;
 }

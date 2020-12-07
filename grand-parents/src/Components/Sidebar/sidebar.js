@@ -37,11 +37,11 @@ function Sidebar(){
         <div className="o-div-profile">
             <div>
             <img className="o-img-profile" src={imgProfile} />
-            <h5 className="o-sidebar-header">Juan José</h5>
+            <h5 className="o-sidebar-header5">Juan José</h5>
             </div>           
         </div>
         <div class="o-sidebar-header ">
-            <h4>GrandParent´s Enjoy</h4>
+            <h4 className="o-tittle">GrandParent´s Enjoy</h4>
         </div>
             <p className="o-sidebar-header border-bottom o-padding-ul ">Recreación para personas mayores</p>
         <ul class="list-unstyled components o-ul-list">

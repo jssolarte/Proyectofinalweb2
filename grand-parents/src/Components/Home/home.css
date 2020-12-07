@@ -23,16 +23,16 @@
     width: 50%;
     float: left;
     border: 1rem;
-    color: #3665f5;
+    color: #002361;
   }
 
   .o-tittle-welcome{
-    color: #3665f5;
+    color: #002361;
   }
   
   .o-paragraph {
     margin: 1rem;
-    color: grey;
+    color: #000000;
   }
   .o-detail-left {
     display: flex;
@@ -54,7 +54,7 @@
 
     border-radius: 0.9rem;
     color: white;
-    background-color: #458FF6;
+    background-color: #002361;
     border: none;
     outline: none;
     height: 2.1rem;
@@ -68,6 +68,6 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    color: grey;
+    color: #000000;
 }
 

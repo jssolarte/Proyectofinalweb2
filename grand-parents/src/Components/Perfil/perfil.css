@@ -15,7 +15,7 @@
 }
 
 .o-tittle{
-    color: #3665f5;
+    color: #002361;
     text-align: center;
 }
 .o-text-information{
@@ -28,12 +28,13 @@
 }
 .o-img{
 
-    height: 10rem;
+    height: 15rem;
 }
 .o-letra{
 
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-weight: bold;
+    text-align: center;
 }
 .o-form-profile{
     display: flex;
@@ -44,7 +45,7 @@
 .o-title-profile-retro{
     display: flex;
     text-align: start;
-    color: #3665f5;
+    color:  #002361;
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
@@ -58,5 +59,5 @@
 }
 .o-text-retro {
     text-align: center;
-    color: #3665f5;
+    color: #002361;
 }

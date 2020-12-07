@@ -19,7 +19,8 @@ function SobreNosotros(){
                 <div><img className="o-img-picture img-fluid" src={imgAbuelos}/></div>
 
             </div>
-            <div className="o-container-text">
+    
+            <div className="o-container-text mt-4">
 
                 <p>En GrandParents Enjoy nos preocupamos por la salud de nuestros mayores <br></br>
                     Por ello, hemos diseñado una cantidad de lúdicas para entretenerlos. <br></br>
@@ -37,7 +38,8 @@ function SobreNosotros(){
 
 
             </div>
-        </div>
+            </div>
+        
         </>
     );
 }

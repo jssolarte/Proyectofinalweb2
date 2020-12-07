@@ -17,20 +17,20 @@
 
     display: flex;
    justify-content: center;
-   padding: 10rem;
+   padding: 25rem;
   
 
 }
 .o-img-social{
 
-height: 2rem;
+height: 3rem;
 margin-right: 0.5rem;
 
 
 }
 .o-img-picture{
 
-    height: 23rem;
+    height: 40rem;
     opacity: 0.1;
 }
 .o-text-up{
@@ -39,6 +39,6 @@ text-align: center;
 }
 
 .o-text-tittle{
-    color: #3665f5;
+    color:  #002361;
     text-align: center;
 }

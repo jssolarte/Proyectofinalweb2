@@ -15,11 +15,11 @@ function calcularIMC(){
     let clasificacion;
     
     if (imc < 18.5) {
-        clasificacion = 'estás muy flaco hpta';
+        clasificacion = 'estás muy delgado';
     } else if (imc < 25) {
-        clasificacion = 'estás bien hpta';
+        clasificacion = 'Te encuentras bien';
     } else {
-        clasificacion = 'estas muy gordo hpta';
+        clasificacion = 'Te encuentras en sobrepeso';
     }
     document.getElementById("respuesta").value='Hola, tu IMC ES ' +imc+'y tu'+clasificacion;
     /* Consejo:
@@ -73,7 +73,7 @@ function Perfil() {
 
                             </div>
                         </div>
-                        <h3 className="o-title-profile-retro">Retroalimentación</h3>
+                        <h3 className="o-title-profile-retro">Tus estadísticas</h3>
                         <div className="o-container-down mt-5">
                             <div><img className="o-img" src={imgGraph1} />
                                 <p className="o-letra">Videos vistos: 6</p>

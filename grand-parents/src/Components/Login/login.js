@@ -40,7 +40,7 @@ function Login (){
 <br></br>
 
 </form>
-<div>
+<div className="mt-4">
 <Link  to="/home"><GoogleLogin
     clientId="158721313277-he1r8b2a578b58nh2ip74n3dptb18ur0.apps.googleusercontent.com"
     buttonText="Iniciar Sesión"

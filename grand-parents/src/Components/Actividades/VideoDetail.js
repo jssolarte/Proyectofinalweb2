@@ -4,16 +4,16 @@ import './VideoDetail.css';
 const VideoDetail = ({ video }) => {
   if (!video) {
     return <div>
-          <br/><h1 className="o-titulo-consulta">Haga su consulta</h1>
+          <br/><h1 className="o-titulo-consulta">Ejercicios físicos recomendados:</h1>
        <br/>
-       <p style={{fontSize:'25px'}}>
+       <p style={{fontSize:'20px'}}>
        Recomendamos las siguientes actividades que le ayudarán a estar en mejor forma:<br/>
        - Estiramientos<br/>
        - Zumba básico <br/> 
        - Rutina ejercicios quema grasas<br/>
-       - rutina ejercicios para tonificar cuerpo<br/>
+       - Rutina ejercicios para tonificar cuerpo<br/>
        - Estiramientos para finalizar entreno<br/>
-       <br/><br/>Después de esta rútina podrá tener un entrenamiento completo.<br/>   
+       <br/><br/>Después de esta rutina podrá tener un entrenamiento completo.<br/>   
 
        </p>
     </div>;
